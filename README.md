@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Proyect Images
+Landing page: ![image](https://github.com/omar8910/CryptCoins/assets/116154208/5276312c-69ed-4ebf-92d7-49ca3e17df86)
+Sign in/ Sign up: ![image](https://github.com/omar8910/CryptCoins/assets/116154208/c50b0b94-2be1-47b8-808a-e7fe5092a28f)
+Portfolio: ![image](https://github.com/omar8910/CryptCoins/assets/116154208/3134ab38-81f1-44ee-9c04-c6fc9c88ab92)
+![image](https://github.com/omar8910/CryptCoins/assets/116154208/2e5a1dbd-2230-46f4-919c-e48ed006be64)
+Coin info details: ![image](https://github.com/omar8910/CryptCoins/assets/116154208/bdd0c49c-223d-4510-b602-747fbe970204)
