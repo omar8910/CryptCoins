@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cryptcoins-f99ce": {
+      "hosting": {
+        "cryptcoins": [
+          "cryptcoins-f99ce"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cryptcoins-f99ce"
+  }
+}

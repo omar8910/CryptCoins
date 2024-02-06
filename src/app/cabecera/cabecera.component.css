@@ -1,0 +1,44 @@
+/* NAV */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: .7em;
+}
+#pageTitle{
+    /* color: #b47b02; */
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+#loginIcon, #logoutIcon{
+    color: white;
+    font-size: 1.5em;
+}
+#loginIcon:hover, #logoutIcon:hover{
+    color: #676767;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+#navLinks{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+#portfolioLink{
+    position: relative;
+    color: white;
+    font-size: 1.5em;
+}
+#portfolioLink:hover{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    color: #676767;
+
+}
+
+.botonesA{
+    display: flex;
+    align-items: center;
+
+}

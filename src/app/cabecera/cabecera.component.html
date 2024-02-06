@@ -1,0 +1,12 @@
+<div class="header">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <h1 id="pageTitle" routerLink="">CryptCoins</h1>
+            <div id="navLinks">
+                <span routerLink="/portfolio" *ngIf="mostrarMenu()" id="portfolioLink">Mi Portfolio</span>
+                <span routerLink="/inicio-sesion" *ngIf="!mostrarMenu(); else elseBlock"><i class="fa-solid fa-user" title="Log In" id="loginIcon"></i></span>
+                <ng-template #elseBlock><i class="fa-solid fa-right-from-bracket" title="Log Out" id="logoutIcon" (click)="cerrarSesion()" ></i></ng-template>
+            </div>
+        </div>
+    </nav>
+</div>

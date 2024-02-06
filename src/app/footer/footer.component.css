@@ -1,0 +1,13 @@
+/* FOOTER */
+#footer{
+    background-color: rgba(0, 0, 0, 0.642);
+    color: white;
+}
+
+.opciones ul li a{
+    color: rgb(119, 118, 118) !important;
+}
+
+#footerDiv{
+    width: 100%;
+}

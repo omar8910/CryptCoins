@@ -1,0 +1,40 @@
+<div id="tableFavoriteCoins" class="table-responsive">
+    <table class="table text-light text-center fs-5">
+        <thead>
+            <tr>
+                <th scope="col">Imagen</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Símbolo</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Capitalización</th>
+                <th scope="col">Volumen</th>
+                <th scope="col">Precio más alto (24h)</th>
+                <th scope="col">Precio más bajo (24h)</th>
+                <th scope="col" *ngIf="ConfiguracionPeticionApiService.arrayMonedasFavoritas.length > 0">Borrar</th>
+                <th scope="col" *ngIf="ConfiguracionPeticionApiService.arrayMonedasFavoritas.length > 0">Info</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="ConfiguracionPeticionApiService.arrayMonedasFavoritas.length > 0; else noFavoritesBlock">
+            <tr *ngFor="let moneda of ConfiguracionPeticionApiService.arrayMonedasFavoritas">
+                <td><img [src]="moneda.imagenMoneda" alt="{{ moneda.nombreMoneda }}" class="imgCoin"></td>
+                <td>{{ moneda.nombreMoneda }}</td>
+                <td>{{ moneda.simboloMoneda }}</td>
+                <td>{{ moneda.precioMoneda }}</td>
+                <td>{{ moneda.capitalizaciondeMercadoMoneda }}</td>
+                <td>{{ moneda.volumenMoneda }}</td>
+                <td>{{ moneda.precioMaximoMoneda }}</td>
+                <td>{{ moneda.precioMinimoMoneda }}</td>
+                <td class="lastTd"><i class="fa-solid fa-trash trashIcon" title="Quitar de favoritos" (click)="eliminarMonedaFavorita(moneda)"></i></td>
+                <td class="lastTd"><i [routerLink]="['/detalles-moneda', moneda.idMoneda]" class="fa-solid fa-circle-info infoIcon" title="Más información"></i></td>
+            </tr>
+        </tbody>
+        <ng-template #noFavoritesBlock>
+            <tbody>
+                <tr>
+                    <td colspan="9" class="text-center text-uppercase fs-5 textoTabla" >No tienes ninguna moneda favorita</td>
+                </tr>
+            </tbody>
+        </ng-template>
+    </table>
+  </div>
+  

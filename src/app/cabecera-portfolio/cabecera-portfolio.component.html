@@ -1,0 +1,17 @@
+<div id="portfolioHeader">
+        <div class="coinCard-container">
+                <app-estructura-moneda *ngFor="let moneda of configuracionPeticionApiService.arrayMonedas | slice: (pagina-1) * tamanioPagina : pagina * tamanioPagina" [moneda]="moneda" (click)="aniadirMonedaAFavoritos(moneda.id)">
+                </app-estructura-moneda>
+            </div>
+    
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item" [class.disabled]="pagina === 1">
+                    <a class="page-link" href="" (click)="pagina = pagina - 1; $event.preventDefault()">Anterior</a>
+                </li>
+                <li class="page-item" [class.disabled]="pagina === totalPaginas">
+                    <a class="page-link" href="" (click)="pagina = pagina + 1; $event.preventDefault()">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+    </div>

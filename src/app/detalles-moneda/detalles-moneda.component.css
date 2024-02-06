@@ -1,0 +1,86 @@
+#coinDetailsContainer{
+    margin-top: 5em;
+    margin-bottom: 5em;
+    background-color: rgba(0, 0, 0, 0.752);
+}
+#flexRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#col6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+#coinDetailsContainer-mainInfo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#coinDetailsContainer-mainInfo img{
+    width: 15%;
+}
+#coinSymbol{
+    color: gray;
+}
+
+/* Estilo para la tabla */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #343a40; /* Color de fondo oscuro */
+    color: #ffffff; /* Color del texto blanco */
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+  }
+  
+  .table th, td {
+    background-color: #212529; /* Color de fondo más oscuro para las celdas de encabezado */
+  }
+  
+  /* Estilo para las celdas impares */
+  .table tbody tr:nth-child(odd) {
+    background-color: #454d55; /* Color de fondo más oscuro para las filas impares */
+  }
+  
+  /* Estilo para las celdas al pasar el mouse */
+  .table tbody tr:hover {
+    background-color: #5a6268; /* Color de fondo más oscuro al pasar el mouse */
+  }
+  
+  /* Estilo para el texto de las celdas */
+  .table th,
+  .table td {
+    color: #ffffff; /* Color del texto blanco */
+  }
+
+  #divBotonVolverAtras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+ 
+  }
+  .botonVolver{
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #838181;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+
+    .botonVolver:hover{
+    background-color: #4a4a4a;
+    border-color: #858484;
+    }

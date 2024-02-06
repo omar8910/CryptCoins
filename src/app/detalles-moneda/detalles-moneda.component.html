@@ -1,0 +1,57 @@
+<div class="container text-light" id="coinDetailsContainer">
+    <div class="row" id="flexRow">
+        <div class="col-6" id="col6">
+            <div class="row">
+                <div id="coinDetailsContainer-mainInfo" class="col">
+                    <img [src]="monedaDetallada.image.large" alt="">
+                    <div id="coinDetailsContainer-name">
+                        <h1>{{monedaDetallada.name}}</h1>
+                        <h2 id="coinSymbol">{{monedaDetallada.symbol}}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Precio del {{monedaDetallada.name}}</td>
+                            <th>{{monedaDetallada.market_data.current_price.eur}} €</th>
+                        </tr>
+                        <tr>
+                            <td>Mínimo en 24 h / Máximo en 24 h</td>
+                            <th>{{monedaDetallada.market_data.low_24h.eur}} € / {{monedaDetallada.market_data.high_24h.eur}} €</th>
+                        </tr>
+                        <tr>
+                            <td>Volumen de comercio</td>
+                            <th>{{monedaDetallada.market_data.total_volume.eur}} €</th>
+                        </tr>
+                        <tr>
+                            <td>Clasificación de capitalización de mercado</td>
+                            <th>{{monedaDetallada.market_data.market_cap_rank}}</th>
+                        </tr>
+                        <tr>
+                            <td>Cap. de mercado</td>
+                            <th>{{monedaDetallada.market_data.market_cap.eur}} €</th>
+                        </tr>
+                        <tr>
+                            <td>Suministro circulante</td>
+                            <th>{{monedaDetallada.market_data.circulating_supply}}</th>
+                        </tr>
+                        <tr>
+                            <td>Descripcion</td>
+                            <th>{{monedaDetallada.description.es}}</th>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div id="coinDetailsContainer-moreInfo" class="col-6">
+            <div id="coinDetailsContainer-graphic">
+                <canvasjs-chart class="editGraphic" [options]="chartOptions" [styles]="{width: '100%', height: '460px'}" (chartInstance)="getChartInstance($event)"></canvasjs-chart>
+            </div>
+        </div>
+        <div id="divBotonVolverAtras">
+            <button (click)="volverAtras()" class="botonVolver">Volver atrás</button>
+        </div>
+    </div>
+</div>
