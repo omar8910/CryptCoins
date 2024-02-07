@@ -6,22 +6,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Proyect Images
+Landing page 1: ![image](https://github.com/omar8910/CryptCoins/assets/116154208/e0ab67bb-1aa7-4404-8e01-9c4363b4d1ae)
+Landing page 2: ![image](https://github.com/omar8910/CryptCoins/assets/116154208/b1ca3a35-370f-4ad9-8668-850c01cadaf6)
+Sign in/ Sign up: ![image](https://github.com/omar8910/CryptCoins/assets/116154208/fd751ee4-5a67-4574-a01d-4c3a2f472127)
+Portfolio: ![image](https://github.com/omar8910/CryptCoins/assets/116154208/c00b4332-85c0-4eda-bb45-2fa31cfc2806)
+Coin info details: ![image](https://github.com/omar8910/CryptCoins/assets/116154208/c88b68a1-588f-499a-9baf-dffb6db877c3)
